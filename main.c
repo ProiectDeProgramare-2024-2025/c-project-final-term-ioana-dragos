@@ -447,7 +447,7 @@ void cumpara_produs()
             if(produs[i].cantitate>=cantitate_dorita)
             {
                 produs[i].cantitate=produs[i].cantitate-cantitate_dorita;
-                printf("\nAti cumparat %d din produsul %s!\n",cantitate_dorita, produs[i].nume);
+                printf("\nAti cumparat %d (bucati/kg) din produsul %s!\n",cantitate_dorita, produs[i].nume);
 
                 if(produs[i].cantitate == 0)
                 {
@@ -469,7 +469,7 @@ void cumpara_produs()
             {
                 int ramas=produs[i].cantitate;
                 produs[i].cantitate=0;
-                printf("\nNu avem suficienta cantitate din produsul %s. Ai putut cumpara doar %d.\n", produs[i].nume, ramas );
+                printf("\nNu avem suficienta cantitate din produsul %s. Ai putut cumpara doar %d (bucati/kg).\n", produs[i].nume, ramas );
                 printf("\nProdusul %s s-a epuizat!\n",produs[i].nume);
                 for(int j=i; j<numarproduse-1; j++)
                 {
